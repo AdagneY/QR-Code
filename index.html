@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+       --White: hsl(0, 0%, 100%);
+      --Light-gray: hsl(212, 45%, 89%);
+      --Grayish-blue: hsl(220, 15%, 55%);
+      --Dark-blue: hsl(218, 44%, 22%);
+    }
+    *, *::before ,*::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      height: 100vh;
+      width: 100%;
+      background-color: var(--Light-gray);
+    }
+    .container {
+      background-color: var(--White);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 300px;
+      height: 500px;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container img{
+      position: relative;
+      top: 20%;
+      transform: translateY(-50%);
+      border-radius: 20px;
+      width: 280px;
+      height: auto;
+    }
+    .container .parag{
+      font-size: 15px;
+      padding: 0px 20px;
+      text-align: center;
+    }
+    .container .parag1{
+      font-weight: 700;
+      padding-bottom: 20px;
+      color: var(--Dark-blue);
+    }
+    .container .parag2 {
+      font-weight: 400;
+      color: var(--Grayish-blue);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @media all and (max-width: 375px){
+      body{
+        width: 375px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <img src="./images/image-qr-code.png" alt="frontendmentor">
+  <div class="parag">
+    <h3 class="parag1">Improve your front-end skills by building projects</h3>
+
+  <p class="parag2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
+  
+</div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
